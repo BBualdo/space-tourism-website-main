@@ -1,0 +1,94 @@
+@media (max-width: 560px) {
+  .technology-page {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+  }
+  
+  .technology-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .technology-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+  
+  .technology-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
+  
+  .technology-image img {
+    margin-top: 32px;
+    max-width: 100%;
+  }
+  
+  .technology-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  .technology-buttons .is-toggled {
+    background-color: var(--white);
+    color: var(--mountainFig);
+  }
+  
+  .technology-button {
+    background-color: transparent;
+    border: 1px solid var(--mountainFig);
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+  }
+  
+  .technology-button:hover {
+    border: 2px solid var(--white);
+  }
+  
+  .technology-description-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .technology-description-container h2 {
+    color: var(--icyPlains);
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+  }
+  
+  .technology-name {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+  
+  .technology-description {
+    color: var(--icyPlains);
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

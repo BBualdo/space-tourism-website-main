@@ -1,0 +1,120 @@
+@media (min-width: 561px) {
+  .destination-page {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
+  
+  .destination-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 34px;
+  }
+  
+  .destination-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+  
+  .destination-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
+  
+  .planet-image img {
+    height: 170px;
+    margin-bottom: 26px;
+    margin-top: 32px;
+    width: 170px;
+  }
+  
+  .destination-picker {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .destination-button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--icyPlains);
+    cursor: pointer;
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .destination-button:hover {
+    border-bottom: 3px solid var(--icyPlains);
+  }
+  
+  .destination-picker .is-toggled {
+    color: var(--white);
+    border-color: var(--white);
+  }
+  
+  .destination-description {
+    align-items: center;
+    border-bottom: 1px solid var(--mountainFig);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 32px;
+  }
+  
+  .planet-name {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 56px;
+    text-transform: uppercase;
+  }
+  
+  .planet-description {
+    color: var(--icyPlains);
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .destination-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .distance-container,
+  .travel-time-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .destination-info h3 {
+    color: var(--icyPlains);
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    margin-top: 32px;
+    text-transform: uppercase;
+  }
+  
+  .destination-info p {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+}
