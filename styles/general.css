@@ -1,3 +1,14 @@
+:root {
+  /* COLORS */
+  --icyPlains: hsla(231, 77%, 90%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --darkRift: hsla(230, 35%, 7%, 1);
+  /* FONTS */
+  --barlowCon: 'Barlow Condensed', sans-serif;
+  --barlow: 'Barlow', sans-serif;
+  --bellefair: 'Bellefair', serif;
+}
+
 * {
   box-sizing: border-box;
   font-weight: 400;
@@ -27,7 +38,19 @@ header .logo {
 }
 
 header .hamburger-menu {
+  background-color: transparent;
+  background-image: url(../assets/shared/icon-hamburger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
   cursor: pointer;
+  height: 24px;
+  width: 24px;
+  z-index: 1000;
+}
+
+header .active {
+  background-image: url(../assets/shared/icon-close.svg);
 }
 
 .welcome-page {
@@ -40,23 +63,23 @@ header .hamburger-menu {
 }
 
 h2 {
-  color: #D0D6F9;
-  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--icyPlains);
+  font-family: var(--barlowCon);
   font-size: 16px;
   letter-spacing: 2.7px;
   text-transform: uppercase;
 }
 
 h1 {
-  color: #FFF;
-  font-family: 'Bellefair', serif;
+  color: var(--white);
+  font-family: var(--bellefair);
   font-size: 80px;
   text-transform: uppercase;
 }
 
 h3 {
-  color: #D0D6F9;
-  font-family: 'Barlow', sans-serif;
+  color: var(--icyPlains);
+  font-family: var(--barlow);
   font-size: 16px;
   line-height: 25px;
   text-align: center;
@@ -71,14 +94,56 @@ h3 {
 .explore-button {
   border: none;
   border-radius: 50%;
-  color: #0B0D17;
+  color: var(--darkRift);
   cursor: pointer;
-  fill: #FFF;
+  fill: var(--white);
   flex-shrink: 0;
-  font-family: 'Bellefair', serif;
+  font-family: var(--bellefair);
   font-size: 20px;
   height: 150px;
   margin-top: 81px;
   text-transform: uppercase;
   width: 150px;
+}
+
+header .nav-bar {
+  backdrop-filter: blur(24px);
+  background-color: rgba(255, 255, 255, 0.05);
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  padding: 122.7px 32px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 67vw;
+}
+
+header .shown {
+  display: flex;
+}
+
+.nav-bar li {
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.nav-bar li:hover {
+  border-bottom: 2px solid var(--white);
+}
+
+.nav-bar a {
+  color: var(--white);
+  letter-spacing: 2.7px;
+  font-family: var(--barlowCon);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-bar span {
+  font-weight: 700;
 }
