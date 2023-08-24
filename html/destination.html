@@ -10,15 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/technology.css">
+  <link rel="stylesheet" href="/styles/general.css">
+  <link rel="stylesheet" href="/styles/destination.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="technology-page">
+<body class="destination-page">
   <main>
     <header>
-      <img class="logo" src="assets/shared/logo.svg" alt="">
+      <img class="logo" src="/assets/shared/logo.svg" alt="">
       <button class="hamburger-menu"></button>
         <ul class="nav-bar">
           <li>
@@ -47,28 +47,38 @@
           </li>
         </ul>
     </header>
-    <section class="technology-container">
-      <p class="technology-title">
-        <span>03</span>Space Launch 101
+    <section class="destination-container">
+      <p class="destination-title">
+        <span>01</span>Pick your destination
       </p>
-      <div class="technology-image">
+      <div class="planet-image">
         <!--from JSON-->
       </div>
+      <div class="destination-picker">
+        <button class="destination-button is-toggled">Moon</button>
+        <button class="destination-button">Mars</button>
+        <button class="destination-button">Europa</button>
+        <button class="destination-button">Titan</button>
+      </div>
     </section>
-    <div class="technology-buttons">
-      <button class="technology-button is-toggled">1</button>
-      <button class="technology-button">2</button>
-      <button class="technology-button">3</button>
-    </div>
-    <section class="technology-description-container">
-      <h2>The Terminology...</h2>
-      <h1 class="technology-name"><!--from JSON--></h1>
-      <h3 class="technology-description">
+    <section class="destination-description">
+      <h1 class="planet-name"><!--from JSON--></h1>
+      <h2 class="planet-description">
         <!--from JSON-->
-      </h3>
+      </h2>
+    </section>
+    <section class="destination-info">
+      <div class="distance-container">
+        <h3>Avg. Distance</h3>
+        <p class="distance"><!--from JSON--></p>
+      </div>
+      <div class="travel-time-container">
+        <h3>Est. Travel Time</h3>
+        <p class="travel-time"><!--from JSON--></p>
+      </div>
     </section>
   </main>
-  <script src="script/app.js"></script>
-  <script src="script/technology.js"></script>
+  <script src="/script/app.js"></script>
+  <script src="/script/destinations.js"></script>
 </body>
 </html>
