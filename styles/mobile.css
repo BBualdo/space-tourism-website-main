@@ -127,7 +127,7 @@
     margin-top: 48px;
   }
   
-  h2 {
+  .welcome-page h2 {
     color: var(--icyPlains);
     font-family: var(--barlowCon);
     font-size: 16px;
@@ -135,19 +135,20 @@
     text-transform: uppercase;
   }
   
-  h1 {
+  .welcome-page h1 {
     color: var(--white);
     font-family: var(--bellefair);
     font-size: 80px;
     text-transform: uppercase;
   }
   
-  h3 {
+  .welcome-page h3 {
     color: var(--icyPlains);
     font-family: var(--barlow);
     font-size: 16px;
     line-height: 25px;
     text-align: center;
+    width: 340px;
   }
   
   .explore-button-container {
@@ -183,6 +184,21 @@
   .destination-page {
     background-image: url(../assets/destination/background-destination-mobile.jpg);
   }
+
+  .destination-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .destination-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
   
   .destination-container {
     align-items: center;
@@ -190,20 +206,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 34px;
-  }
-  
-  .destination-title {
-    color: var(--white);
-    font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin-top: 24px;
-    text-transform: uppercase;
-  }
-  
-  .destination-title span {
-    color: rgba(255, 255, 255, 0.25);
-    margin-right: 18px;
   }
   
   .planet-image img {
@@ -216,7 +218,8 @@
   .destination-picker {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    gap: 26px;
+    justify-content: center;
     width: 100%;
   }
   
@@ -266,6 +269,7 @@
     font-family: var(--barlow);
     font-size: 16px;
     line-height: 25px;
+    width: 340px;
   }
   
   .destination-info {
@@ -306,6 +310,21 @@
   .crew-page {
     background-image: url(../assets/crew/background-crew-mobile.jpg);
   }
+
+  .crew-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .crew-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
   
   .crew-container {
     align-items: center;
@@ -315,20 +334,6 @@
     justify-content: center;
     padding: 0 60px;
     width: 100%;
-  }
-  
-  .crew-title {
-    color: var(--white);
-    font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin-top: 24px;
-    text-transform: uppercase;
-  }
-  
-  .crew-title span {
-    color: rgba(255, 255, 255, 0.25);
-    margin-right: 18px;
   }
   
   .crew-image img {
@@ -404,6 +409,21 @@
   .technology-page {
     background-image: url(../assets/technology/background-technology-mobile.jpg);
   }
+
+  .technology-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .technology-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
   
   .technology-container {
     align-items: center;
@@ -412,20 +432,6 @@
     justify-content: center;
     padding: 0;
     width: 100%;
-  }
-  
-  .technology-title {
-    color: var(--white);
-    font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin-top: 24px;
-    text-transform: uppercase;
-  }
-  
-  .technology-title span {
-    color: rgba(255, 255, 255, 0.25);
-    margin-right: 18px;
   }
   
   .technology-image img {
