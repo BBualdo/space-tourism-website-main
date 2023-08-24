@@ -24,7 +24,7 @@
   opacity: 0.25;
 }
 
-.planet-image {
+.planet-image img {
   height: 170px;
   margin-bottom: 26px;
   margin-top: 32px;
@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-.destination-picker button {
+.destination-button {
   background-color: transparent;
   border: none;
   border-bottom: 3px solid transparent;
@@ -52,8 +52,13 @@
   text-transform: uppercase;
 }
 
-.destination-picker button:hover {
+.destination-button:hover {
   border-bottom: 3px solid var(--icyPlains);
+}
+
+.is-toggled {
+  color: var(--white);
+  border-color: var(--white);
 }
 
 .destination-description {
