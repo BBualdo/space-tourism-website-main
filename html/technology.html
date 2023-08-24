@@ -11,11 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/styles/general.css">
-  <link rel="stylesheet" href="/styles/home-page.css">
+  <link rel="stylesheet" href="/styles/technology.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="home-page">
+<body class="technology-page">
   <main>
     <header>
       <img class="logo" src="/assets/shared/logo.svg" alt="">
@@ -47,25 +47,28 @@
           </li>
         </ul>
     </header>
-    <section class="welcome-page">
-      <h2>
-        So, you want to travel to
-      </h2>
-      <h1>
-        Space
-      </h1>
-      <h3>
-        Let’s face it; if you want to go to space, you might as well genuinely go to 
-        outer space and not hover kind of on the edge of it. Well sit back, and relax 
-        because we’ll give you a truly out of this world experience!
-      </h3>
+    <section class="technology-container">
+      <p class="technology-title">
+        <span>03</span>Space Launch 101
+      </p>
+      <div class="technology-image">
+        <img src="/assets/technology/image-launch-vehicle-landscape.jpg">
+      </div>
     </section>
-    <section class="explore-button-container">
-      <a href="destination.html">
-        <button class="explore-button">Explore</button>
-      </a>
+    <div class="technology-buttons">
+      <button class="technology-button is-toggled">1</button>
+      <button class="technology-button">2</button>
+      <button class="technology-button">3</button>
+    </div>
+    <section class="technology-description-container">
+      <h2>The Terminology...</h2>
+      <h1 class="technology-name">LAUNCH VEHICLE</h1>
+      <h3 class="technology-description">
+        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+      </h3>
     </section>
   </main>
   <script src="/script/app.js"></script>
+  <script src="/script/technology.js"></script>
 </body>
 </html>

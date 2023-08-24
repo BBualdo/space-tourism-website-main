@@ -17,5 +17,5 @@ const getCrewData = (index) => {
   }));
 }
 
-// default destination data
-getDestinationData(0);
+// default crew data
+getCrewData(0);
