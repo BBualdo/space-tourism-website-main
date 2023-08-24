@@ -11,11 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/styles/general.css">
-  <link rel="stylesheet" href="/styles/home-page.css">
+  <link rel="stylesheet" href="/styles/destination.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="home-page">
+<body class="destination-page">
   <main>
     <header>
       <img class="logo" src="/assets/shared/logo.svg" alt="">
@@ -47,21 +47,33 @@
           </li>
         </ul>
     </header>
-    <section class="welcome-page">
-      <h2>
-        So, you want to travel to
-      </h2>
-      <h1>
-        Space
-      </h1>
-      <h3>
-        Let’s face it; if you want to go to space, you might as well genuinely go to 
-        outer space and not hover kind of on the edge of it. Well sit back, and relax 
-        because we’ll give you a truly out of this world experience!
-      </h3>
+    <section class="destination-container">
+      <p class="destination-title">
+        <span>01</span>Pick your destination
+      </p>
+      <img class="planet-image" src="/assets/destination/image-moon.webp" alt="">
+      <div class="destination-picker">
+        <button class="destination-button">Moon</button>
+        <button class="destination-button">Mars</button>
+        <button class="destination-button">Europa</button>
+        <button class="destination-button">Titan</button>
+      </div>
     </section>
-    <section class="explore-button-container">
-      <button class="explore-button">Explore</button>
+    <section class="destination-description">
+      <h1 class="planet-name">Moon</h1>
+      <h2 class="planet-description">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+      </h2>
+    </section>
+    <section class="destination-info">
+      <div class="distance-container">
+        <h3>Avg. Distance</h3>
+        <p class="distance">384,400 km</p>
+      </div>
+      <div class="travel-time-container">
+        <h3>Est. Travel Time</h3>
+        <p class="travel-time">3 days</p>
+      </div>
     </section>
   </main>
   <script src="/script/app.js"></script>
