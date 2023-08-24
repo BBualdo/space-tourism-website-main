@@ -3,6 +3,7 @@ const menuButton = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.nav-bar');
 const destinationButtons = document.querySelectorAll('.destination-button');
 const crewButtons = document.querySelectorAll('.crew-button');
+const technologyButtons = document.querySelectorAll('.technology-button');
   
 // mobile Menu folding
 menuButton.addEventListener('click', () => {
@@ -31,6 +32,16 @@ crewButtons.forEach((button, index) => {
     button.classList.add('is-toggled');
   });
 });
+
+// Technology picker
+technologyButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    getTechnologyData(index);
+    toggleOff(technologyButtons);
+    button.classList.add('is-toggled');
+  });
+});
+
 // Toggle off function based on type of button put in parameter
 function toggleOff(buttons) {
   buttons.forEach((button) => {
