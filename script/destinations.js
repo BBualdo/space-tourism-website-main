@@ -5,7 +5,7 @@ const planetDescriptionPlaceholder = document.querySelector('.planet-description
 const distancePlaceholder = document.querySelector('.distance');
 const timePlaceholder = document.querySelector('.travel-time');
 // JSON destinations data 
-const getdestinationData = (index) => {
+const getDestinationData = (index) => {
   fetch('/data.json')
   .then((res) => res.json()
   .then((data) => {
@@ -20,4 +20,4 @@ const getdestinationData = (index) => {
 }
 
 // default destination data
-getdestinationData(0);
+getDestinationData(0);

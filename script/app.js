@@ -2,6 +2,7 @@
 const menuButton = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.nav-bar');
 const destinationButtons = document.querySelectorAll('.destination-button');
+const crewButtons = document.querySelectorAll('.crew-button');
   
 // mobile Menu folding
 menuButton.addEventListener('click', () => {
@@ -16,14 +17,23 @@ menuButton.addEventListener('click', () => {
 // Destination picker
 destinationButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    getdestinationData(index);
-    toggleOff();
+    getDestinationData(index);
+    toggleOff(destinationButtons);
     button.classList.add('is-toggled');
   });
 });
 
-function toggleOff() {
-  destinationButtons.forEach((button) => {
+// Crew picker
+crewButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    getCrewData(index);
+    toggleOff(crewButtons);
+    button.classList.add('is-toggled');
+  });
+});
+// Toggle off function based on type of button put in parameter
+function toggleOff(buttons) {
+  buttons.forEach((button) => {
     button.classList.remove('is-toggled');
   });
 };

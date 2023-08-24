@@ -56,7 +56,7 @@
   border-bottom: 3px solid var(--icyPlains);
 }
 
-.is-toggled {
+.destination-picker .is-toggled {
   color: var(--white);
   border-color: var(--white);
 }
