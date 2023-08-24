@@ -1,0 +1,496 @@
+@media (max-width: 560px) {
+  /* ----------------------------- */
+  /*            GENERAL            */
+  /* ----------------------------- */
+
+  :root {
+    /* COLORS */
+    --icyPlains: hsla(231, 77%, 90%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --darkRift: hsla(230, 35%, 7%, 1);
+    --mountainFig: hsla(231, 15%, 26%, 1);
+    /* FONTS */
+    --barlowCon: 'Barlow Condensed', sans-serif;
+    --barlow: 'Barlow', sans-serif;
+    --bellefair: 'Bellefair', serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  main {
+    padding: 24px;
+  }
+
+  /* ----------------------------- */
+  /*            HEADERS            */
+  /* ----------------------------- */
+  
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  header .hamburger-menu {
+    background-color: transparent;
+    background-image: url(../assets/shared/icon-hamburger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    z-index: 1000;
+  }
+  
+  header .active {
+    background-image: url(../assets/shared/icon-close.svg);
+  }
+  
+  header .nav-bar {
+    backdrop-filter: blur(24px);
+    background-color: rgba(255, 255, 255, 0.05);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    padding: 122.7px 32px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    width: 67vw;
+  }
+  
+  header .shown {
+    transform: translateX(0);
+  }
+  
+  .nav-bar li {
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    padding: 12px 0;
+  }
+  
+  .nav-bar li:hover {
+    border-bottom: 2px solid var(--white);
+  }
+  
+  .nav-bar a {
+    color: var(--white);
+    letter-spacing: 2.7px;
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .nav-bar span {
+    font-weight: 700;
+  }
+
+  .nav-bar-ext {
+    display: none;
+  }
+
+  /* ----------------------------- */
+  /*           HOME PAGE           */
+  /* ----------------------------- */
+
+  .home-page {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+  
+  .welcome-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+  
+  h2 {
+    color: var(--icyPlains);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 80px;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    color: var(--icyPlains);
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  .explore-button-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .explore-button {
+    border: none;
+    border-radius: 50%;
+    color: var(--darkRift);
+    cursor: pointer;
+    fill: var(--white);
+    flex-shrink: 0;
+    font-family: var(--bellefair);
+    font-size: 20px;
+    height: 150px;
+    margin-top: 81px;
+    text-transform: uppercase;
+    transition: box-shadow 1s;
+    width: 150px;
+  }
+  
+  .explore-button:hover {
+    box-shadow: 0 0 100px rgba(255, 255, 255, 1);
+  }
+
+  /* ----------------------------- */
+  /*          DESTINATIONS         */
+  /* ----------------------------- */
+
+  .destination-page {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+  }
+  
+  .destination-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 34px;
+  }
+  
+  .destination-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+  
+  .destination-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
+  
+  .planet-image img {
+    height: 170px;
+    margin-bottom: 26px;
+    margin-top: 32px;
+    width: 170px;
+  }
+  
+  .destination-picker {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .destination-button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--icyPlains);
+    cursor: pointer;
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .destination-button:hover {
+    border-bottom: 3px solid var(--icyPlains);
+  }
+  
+  .destination-picker .is-toggled {
+    color: var(--white);
+    border-color: var(--white);
+  }
+  
+  .destination-description {
+    align-items: center;
+    border-bottom: 1px solid var(--mountainFig);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 32px;
+  }
+  
+  .planet-name {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 56px;
+    text-transform: uppercase;
+  }
+  
+  .planet-description {
+    color: var(--icyPlains);
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .destination-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .distance-container,
+  .travel-time-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .destination-info h3 {
+    color: var(--icyPlains);
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    margin-top: 32px;
+    text-transform: uppercase;
+  }
+  
+  .destination-info p {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  /* ----------------------------- */
+  /*             CREW              */
+  /* ----------------------------- */
+
+  .crew-page {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+  }
+  
+  .crew-container {
+    align-items: center;
+    border-bottom: 1px solid var(--mountainFig);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    width: 100%;
+  }
+  
+  .crew-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+  
+  .crew-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
+  
+  .crew-image img {
+    bottom: -4px;
+    margin-top: 32px;
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .crew-slides {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  .crew-slides .is-toggled {
+    background-color: var(--white);
+  }
+  
+  .crew-button {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 12px;
+    padding: 0;
+    width: 12px;
+  }
+  
+  .crew-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .crew-description-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .crew-role {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--bellefair);
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .crew-name {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+  
+  .crew-description {
+    color: var(--icyPlains);
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  /* ----------------------------- */
+  /*          TECHNOLOGY           */
+  /* ----------------------------- */
+
+  .technology-page {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+  }
+  
+  .technology-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .technology-title {
+    color: var(--white);
+    font-family: var(--barlowCon);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+  
+  .technology-title span {
+    color: rgba(255, 255, 255, 0.25);
+    margin-right: 18px;
+  }
+  
+  .technology-image img {
+    margin-top: 32px;
+    max-width: 100%;
+  }
+  
+  .technology-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  .technology-buttons .is-toggled {
+    background-color: var(--white);
+    color: var(--mountainFig);
+  }
+  
+  .technology-button {
+    background-color: transparent;
+    border: 1px solid var(--mountainFig);
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+  }
+  
+  .technology-button:hover {
+    border: 2px solid var(--white);
+  }
+  
+  .technology-description-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .technology-description-container h2 {
+    color: var(--icyPlains);
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+  }
+  
+  .technology-name {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+  
+  .technology-description {
+    color: var(--icyPlains);
+    text-align: center;
+    font-family: var(--barlow);
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
