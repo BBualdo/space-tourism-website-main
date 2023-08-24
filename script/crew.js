@@ -5,7 +5,7 @@ const crewNamePlaceholder = document.querySelector('.crew-name');
 const crewDescriptionPlaceholder = document.querySelector('.crew-description');
 // JSON crew data 
 const getCrewData = (index) => {
-  fetch('/data.json')
+  fetch('data.json')
   .then((res) => res.json()
   .then((data) => {
     crewImagePlaceholder.innerHTML = `
