@@ -1,4 +1,4 @@
-@media (max-width: 560px) {
+@media (min-width: 1091px) {
   /* ----------------------------- */
   /*            GENERAL            */
   /* ----------------------------- */
@@ -39,11 +39,12 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 40px;
   }
   
   header .logo {
-    height: 40px;
-    width: 40px;
+    height: 48px;
+    width: 48px;
   }
   
   header .hamburger-menu {
@@ -53,6 +54,7 @@
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+    display: none;
     height: 24px;
     width: 24px;
     z-index: 1000;
@@ -60,36 +62,37 @@
   
   header .active {
     background-image: url(../assets/shared/icon-close.svg);
+    display: none;
   }
   
   header .nav-bar {
     backdrop-filter: blur(24px);
     background-color: rgba(255, 255, 255, 0.05);
-    bottom: 0;
     display: flex;
-    flex-direction: column;
-    gap: 32px;
+    justify-content: space-evenly;
     list-style: none;
-    padding: 122.7px 32px;
     position: fixed;
     right: 0;
-    top: 0;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
-    width: 67vw;
+    top: 40px;
+    width: 60vw;
   }
   
   header .shown {
+    display: none;
     transform: translateX(0);
   }
   
   .nav-bar li {
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    padding: 12px 0;
+    padding: 32px 0;
   }
   
   .nav-bar li:hover {
+    border-bottom: 2px solid var(--white);
+  }
+
+  .nav-bar .is-toggled {
     border-bottom: 2px solid var(--white);
   }
   
@@ -107,7 +110,35 @@
   }
 
   .nav-bar-ext {
+    align-items: center;
+    backdrop-filter: blur(40.774227142333984px);
+    background: rgba(255, 255, 255, 0.04);
     display: none;
+    height: 96px;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 60vw;
+  }
+  
+  .nav-bar-ext-a {
+    color: #FFF;
+    display: none;
+    font-family: var(--barlowCon);
+    font-size: 14px;
+    letter-spacing: 2.362px;
+    padding: 38px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .nav-bar-ext-a:hover {
+    border-bottom: 2px solid var(--white);
+  }
+
+  .nav-bar-ext .is-toggled {
+    border-bottom: 2px solid var(--white);
   }
 
   /* ----------------------------- */
@@ -115,7 +146,15 @@
   /* ----------------------------- */
 
   .home-page {
-    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+
+  .desktop-flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 275px;
+    padding: 0 140px;
   }
   
   .welcome-page {
@@ -124,31 +163,31 @@
     flex-direction: column;
     gap: 16px;
     justify-content: space-between;
-    margin-top: 48px;
+    
   }
   
   .welcome-page h2 {
     color: var(--icyPlains);
     font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
+    font-size: 28px;
+    letter-spacing: 4.725px;
     text-transform: uppercase;
   }
   
   .welcome-page h1 {
     color: var(--white);
     font-family: var(--bellefair);
-    font-size: 80px;
+    font-size: 150px;
     text-transform: uppercase;
   }
   
   .welcome-page h3 {
     color: var(--icyPlains);
     font-family: var(--barlow);
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 32px;
     text-align: center;
-    width: 340px;
+    width: 440px;
   }
   
   .explore-button-container {
@@ -165,12 +204,13 @@
     fill: var(--white);
     flex-shrink: 0;
     font-family: var(--bellefair);
-    font-size: 20px;
-    height: 150px;
-    margin-top: 81px;
+    font-size: 32px;
+    height: 274px;
+    letter-spacing: 2px;
+    margin-top: 108px;
     text-transform: uppercase;
     transition: box-shadow 1s;
-    width: 150px;
+    width: 274px;
   }
   
   .explore-button:hover {
@@ -182,16 +222,16 @@
   /* ----------------------------- */
 
   .destination-page {
-    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
   }
 
   .destination-title {
     color: var(--white);
     font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin-top: 24px;
-    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    margin-top: 100px;
+    padding: 0 164px;
     text-transform: uppercase;
   }
   
@@ -200,17 +240,20 @@
     margin-right: 18px;
   }
 
-  .planet-image {
+  .desktop-flex-destination {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  .desktop-sub-flex-destination {
+    width: 445px;
   }
 
   .planet-image img {
-    height: 170px;
-    margin-bottom: 26px;
-    margin-top: 32px;
-    width: 170px;
+    margin-bottom: 53px;
+    margin-top: 60px;
+    min-width: 100%;
   }
   
   .destination-container {
@@ -218,14 +261,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 34px;
   }
   
   .destination-picker {
-    align-items: center;
     display: flex;
-    gap: 26px;
-    justify-content: center;
+    gap: 36px;
     width: 100%;
   }
   
@@ -236,10 +276,9 @@
     color: var(--icyPlains);
     cursor: pointer;
     font-family: var(--barlowCon);
-    font-size: 14px;
-    letter-spacing: 2.362px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
     padding: 8px 0;
-    text-align: center;
     text-transform: uppercase;
   }
   
@@ -253,37 +292,32 @@
   }
   
   .destination-description {
-    align-items: center;
     border-bottom: 1px solid var(--mountainFig);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
-    padding-bottom: 32px;
+    margin-top: 32px;
+    padding-bottom: 49px;
   }
   
   .planet-name {
     color: var(--white);
     font-family: var(--bellefair);
-    font-size: 56px;
+    font-size: 100px;
     text-transform: uppercase;
   }
   
   .planet-description {
     color: var(--icyPlains);
-    text-align: center;
     font-family: var(--barlow);
-    font-size: 16px;
-    line-height: 25px;
-    width: 340px;
+    font-size: 18px;
+    line-height: 32px;
   }
   
   .destination-info {
     align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    gap: 100px;
   }
   
   .distance-container,
@@ -314,16 +348,16 @@
   /* ----------------------------- */
 
   .crew-page {
-    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
   }
 
   .crew-title {
     color: var(--white);
     font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin-top: 24px;
-    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    margin-top: 100px;
+    padding: 0 164px;
     text-transform: uppercase;
   }
   
@@ -331,31 +365,38 @@
     color: rgba(255, 255, 255, 0.25);
     margin-right: 18px;
   }
+
+  .reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
   
   .crew-container {
     align-items: center;
-    border-bottom: 1px solid var(--mountainFig);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 60px;
     width: 100%;
   }
   
   .crew-image img {
-    bottom: -4px;
-    margin-top: 32px;
-    max-width: 100%;
-    position: relative;
-    z-index: -1;
+    min-width: 100%;
+  }
+
+  .desktop-flex-crew {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-left: 164px;
+    width: 100%;
   }
   
   .crew-slides {
     align-items: center;
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 32px;
+    gap: 24px;
+    margin-top: 120px;
   }
   
   .crew-slides .is-toggled {
@@ -367,9 +408,9 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    height: 12px;
+    height: 20px;
     padding: 0;
-    width: 12px;
+    width: 20px;
   }
   
   .crew-button:hover {
@@ -377,35 +418,34 @@
   }
   
   .crew-description-container {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 60px;
   }
   
   .crew-role {
     color: rgba(255, 255, 255, 0.5);
     font-family: var(--bellefair);
-    font-size: 16px;
+    font-size: 32px;
     text-transform: uppercase;
   }
   
   .crew-name {
     color: var(--white);
     font-family: var(--bellefair);
-    font-size: 24px;
-    margin-bottom: 16px;
-    margin-top: 8px;
+    font-size: 56px;
+    margin-bottom: 27px;
+    margin-top: 15px;
     text-transform: uppercase;
   }
   
   .crew-description {
     color: var(--icyPlains);
-    text-align: center;
     font-family: var(--barlow);
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 500px;
   }
 
   /* ----------------------------- */
@@ -419,10 +459,10 @@
   .technology-title {
     color: var(--white);
     font-family: var(--barlowCon);
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    margin-top: 24px;
-    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    margin-top: 100px;
+    padding: 0 164px;
     text-transform: uppercase;
   }
   
@@ -430,30 +470,39 @@
     color: rgba(255, 255, 255, 0.25);
     margin-right: 18px;
   }
+
+  .desktop-flex-technology {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 164px;
+  }
   
   .technology-container {
     align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0;
-    width: 100%;
   }
   
   .technology-landscape img {
-    margin-top: 32px;
-    max-width: 100%;
-  }
-  .technology-portrait {
     display: none;
+    margin-top: 32px;
+    width: 100vw;
   }
 
+  .technology-portrait img {
+    min-width: 100%
+  }
+  
   .technology-buttons {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 16px;
-    margin-top: 32px;
+    order: 1;
+    gap: 32px;
+    margin-top: 56px;
   }
   
   .technology-buttons .is-toggled {
@@ -467,9 +516,10 @@
     border-radius: 50%;
     color: var(--white);
     cursor: pointer;
-    height: 40px;
+    font-size: 32px;
+    height: 80px;
     padding: 0;
-    width: 40px;
+    width: 80px;
   }
   
   .technology-button:hover {
@@ -477,35 +527,34 @@
   }
   
   .technology-description-container {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 44px;
   }
   
   .technology-description-container h2 {
     color: var(--icyPlains);
     font-family: var(--barlowCon);
-    font-size: 14px;
-    letter-spacing: 2.362px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
     text-transform: uppercase;
   }
   
   .technology-name {
     color: var(--white);
     font-family: var(--bellefair);
-    font-size: 24px;
-    margin-bottom: 16px;
-    margin-top: 8px;
+    font-size: 56px;
+    margin-bottom: 17px;
+    margin-top: 11px;
     text-transform: uppercase;
   }
   
   .technology-description {
     color: var(--icyPlains);
-    text-align: center;
     font-family: var(--barlow);
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 32px;
+    width: 472px;
   }
 }

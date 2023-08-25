@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="/styles/mobile.css">
   <link rel="stylesheet" href="/styles/tablet.css">
+  <link rel="stylesheet" href="/styles/desktop.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -27,7 +28,7 @@
               Home
             </a>
           </li>
-          <li>
+          <li class="is-toggled">
             <a href="destination.html">
               <span>01</span>
               Destination
@@ -56,33 +57,38 @@
       <p class="destination-title">
         <span>01</span>Pick your destination
       </p>
-    <section class="destination-container">
-      <div class="planet-image">
-        <!--from JSON-->
-      </div>
-      <div class="destination-picker">
-        <button class="destination-button is-toggled">Moon</button>
-        <button class="destination-button">Mars</button>
-        <button class="destination-button">Europa</button>
-        <button class="destination-button">Titan</button>
-      </div>
+    <section class="desktop-flex-destination">
+        <div class="planet-image">
+          <!--from JSON-->
+        </div>
+    <section class="desktop-sub-flex-destination">
+      <section class="destination-container">
+        <div class="destination-picker">
+          <button class="destination-button is-toggled">Moon</button>
+          <button class="destination-button">Mars</button>
+          <button class="destination-button">Europa</button>
+          <button class="destination-button">Titan</button>
+        </div>
+      </section>
+      <section class="destination-description">
+        <h1 class="planet-name"><!--from JSON--></h1>
+        <h2 class="planet-description">
+          <!--from JSON-->
+        </h2>
+      </section>
+      <section class="destination-info">
+        <div class="distance-container">
+          <h3>Avg. Distance</h3>
+          <p class="distance"><!--from JSON--></p>
+        </div>
+        <div class="travel-time-container">
+          <h3>Est. Travel Time</h3>
+          <p class="travel-time"><!--from JSON--></p>
+        </div>
+      </section>
     </section>
-    <section class="destination-description">
-      <h1 class="planet-name"><!--from JSON--></h1>
-      <h2 class="planet-description">
-        <!--from JSON-->
-      </h2>
     </section>
-    <section class="destination-info">
-      <div class="distance-container">
-        <h3>Avg. Distance</h3>
-        <p class="distance"><!--from JSON--></p>
-      </div>
-      <div class="travel-time-container">
-        <h3>Est. Travel Time</h3>
-        <p class="travel-time"><!--from JSON--></p>
-      </div>
-    </section>
+  </section>
   </main>
   <script src="/script/app.js"></script>
   <script src="/script/destinations.js"></script>

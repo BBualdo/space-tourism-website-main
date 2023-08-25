@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="/styles/mobile.css">
   <link rel="stylesheet" href="/styles/tablet.css">
+  <link rel="stylesheet" href="/styles/desktop.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -33,7 +34,7 @@
               Destination
             </a>
           </li>
-          <li>
+          <li class="is-toggled">
             <a href="crew.html">
               <span>02</span>
               Crew
@@ -56,12 +57,13 @@
       <p class="crew-title">
         <span>02</span>Meet your crew
       </p>
-    <section class="flex-reversed">
-      <section class="crew-container">
-        <div class="crew-image">
-          <!--from JSON-->
-        </div>
-      </section>
+  <section class="reversed">
+    <section class="crew-container">
+      <div class="crew-image">
+        <!--from JSON-->
+      </div>
+    </section>
+    <section class="desktop-flex-crew">
       <div class="crew-slides">
         <button class="crew-button is-toggled"></button>
         <button class="crew-button"></button>
@@ -76,6 +78,7 @@
         </h3>
       </section>
     </section>
+  </section>
   </main>
   <script src="/script/app.js"></script>
   <script src="/script/crew.js"></script>

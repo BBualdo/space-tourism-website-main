@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="/styles/mobile.css">
   <link rel="stylesheet" href="/styles/tablet.css">
+  <link rel="stylesheet" href="/styles/desktop.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -39,7 +40,7 @@
               Crew
             </a>
           </li>
-          <li>
+          <li class="is-toggled">
             <a href="technology.html">
               <span>03</span>
               Technology
@@ -56,8 +57,12 @@
       <p class="technology-title">
         <span>03</span>Space Launch 101
       </p>
+  <section class="desktop-flex-technology">
     <section class="technology-container">
-      <div class="technology-image">
+      <div class="technology-landscape">
+        <!--from JSON-->
+      </div>
+      <div class="technology-portrait">
         <!--from JSON-->
       </div>
     </section>
@@ -73,6 +78,7 @@
         <!--from JSON-->
       </h3>
     </section>
+  </section>
   </main>
   <script src="/script/app.js"></script>
   <script src="/script/technology.js"></script>
