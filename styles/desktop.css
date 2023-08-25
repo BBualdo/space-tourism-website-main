@@ -158,12 +158,10 @@
   }
   
   .welcome-page {
-    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
     justify-content: space-between;
-    
   }
   
   .welcome-page h2 {
@@ -186,7 +184,6 @@
     font-family: var(--barlow);
     font-size: 18px;
     line-height: 32px;
-    text-align: center;
     width: 440px;
   }
   
@@ -453,7 +450,7 @@
   /* ----------------------------- */
 
   .technology-page {
-    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
   }
 
   .technology-title {
