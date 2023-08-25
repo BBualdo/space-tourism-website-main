@@ -10,19 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../styles/mobile.css">
-  <link rel="stylesheet" href="../styles/tablet.css">
-  <link rel="stylesheet" href="../styles/desktop.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/tablet.css">
+  <link rel="stylesheet" href="styles/desktop.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="home-page">
+<body class="technology-page">
   <main>
     <header>
-      <img class="logo" src="../assets/shared/logo.svg" alt="">
+      <img class="logo" src="assets/shared/logo.svg" alt="">
       <button class="hamburger-menu"></button>
         <ul class="nav-bar">
-          <li class="is-toggled">
+          <li>
             <a href="index.html">
               <span>00</span>
               Home
@@ -40,7 +40,7 @@
               Crew
             </a>
           </li>
-          <li>
+          <li class="is-toggled">
             <a href="technology.html">
               <span>03</span>
               Technology
@@ -48,33 +48,39 @@
           </li>
         </ul>
       <div class="nav-bar-ext">
-        <a class="nav-bar-ext-a is-toggled" href="index.html">Home</a>
+        <a class="nav-bar-ext-a" href="index.html">Home</a>
         <a class="nav-bar-ext-a" href="destination.html">Destination</a>
         <a class="nav-bar-ext-a" href="crew.html">Crew</a>
-        <a class="nav-bar-ext-a" href="technology.html">Technology</a>
+        <a class="nav-bar-ext-a is-toggled" href="technology.html">Technology</a>
       </div>
     </header>
-    <section class="desktop-flex">
-      <section class="welcome-page">
-        <h2>
-          So, you want to travel to
-        </h2>
-        <h1>
-          Space
-        </h1>
-        <h3>
-          Let’s face it; if you want to go to space, you might as well genuinely go to 
-          outer space and not hover kind of on the edge of it. Well sit back, and relax 
-          because we’ll give you a truly out of this world experience!
-        </h3>
-      </section>
-      <section class="explore-button-container">
-        <a href="destination.html">
-          <button class="explore-button">Explore</button>
-        </a>
-      </section>
+      <p class="technology-title">
+        <span>03</span>Space Launch 101
+      </p>
+  <section class="desktop-flex-technology">
+    <section class="technology-container">
+      <div class="technology-landscape">
+        <!--from JSON-->
+      </div>
+      <div class="technology-portrait">
+        <!--from JSON-->
+      </div>
     </section>
+    <div class="technology-buttons">
+      <button class="technology-button is-toggled">1</button>
+      <button class="technology-button">2</button>
+      <button class="technology-button">3</button>
+    </div>
+    <section class="technology-description-container">
+      <h2>The Terminology...</h2>
+      <h1 class="technology-name"><!--from JSON--></h1>
+      <h3 class="technology-description">
+        <!--from JSON-->
+      </h3>
+    </section>
+  </section>
   </main>
-  <script src="../script/app.js"></script>
+  <script src="script/app.js"></script>
+  <script src="script/technology.js"></script>
 </body>
 </html>

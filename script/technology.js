@@ -5,7 +5,7 @@ const technologyNamePlaceholder = document.querySelector('.technology-name');
 const technologyDescriptionPlaceholder = document.querySelector('.technology-description');
 // JSON technology data 
 const getTechnologyData = (index) => {
-  fetch('../script/data.json')
+  fetch('data.json')
   .then((res) => res.json()
   .then((data) => {
     technologyLandscapePlaceholder.innerHTML = `

@@ -10,19 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../styles/mobile.css">
-  <link rel="stylesheet" href="../styles/tablet.css">
-  <link rel="stylesheet" href="../styles/desktop.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/tablet.css">
+  <link rel="stylesheet" href="styles/desktop.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body class="crew-page">
+<body class="home-page">
   <main>
     <header>
-      <img class="logo" src="../assets/shared/logo.svg" alt="">
+      <img class="logo" src="assets/shared/logo.svg" alt="">
       <button class="hamburger-menu"></button>
         <ul class="nav-bar">
-          <li>
+          <li class="is-toggled">
             <a href="index.html">
               <span>00</span>
               Home
@@ -34,7 +34,7 @@
               Destination
             </a>
           </li>
-          <li class="is-toggled">
+          <li>
             <a href="crew.html">
               <span>02</span>
               Crew
@@ -48,39 +48,33 @@
           </li>
         </ul>
       <div class="nav-bar-ext">
-        <a class="nav-bar-ext-a" href="index.html">Home</a>
+        <a class="nav-bar-ext-a is-toggled" href="index.html">Home</a>
         <a class="nav-bar-ext-a" href="destination.html">Destination</a>
-        <a class="nav-bar-ext-a is-toggled" href="crew.html">Crew</a>
+        <a class="nav-bar-ext-a" href="crew.html">Crew</a>
         <a class="nav-bar-ext-a" href="technology.html">Technology</a>
       </div>
     </header>
-      <p class="crew-title">
-        <span>02</span>Meet your crew
-      </p>
-  <section class="reversed">
-    <section class="crew-container">
-      <div class="crew-image">
-        <!--from JSON-->
-      </div>
-    </section>
-    <section class="desktop-flex-crew">
-      <div class="crew-slides">
-        <button class="crew-button is-toggled"></button>
-        <button class="crew-button"></button>
-        <button class="crew-button"></button>
-        <button class="crew-button"></button>
-      </div>
-      <section class="crew-description-container">
-        <h2 class="crew-role"><!--from JSON--></h2>
-        <h1 class="crew-name"><!--from JSON--></h1>
-        <h3 class="crew-description">
-          <!--from JSON-->
+    <section class="desktop-flex">
+      <section class="welcome-page">
+        <h2>
+          So, you want to travel to
+        </h2>
+        <h1>
+          Space
+        </h1>
+        <h3>
+          Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!
         </h3>
       </section>
+      <section class="explore-button-container">
+        <a href="destination.html">
+          <button class="explore-button">Explore</button>
+        </a>
+      </section>
     </section>
-  </section>
   </main>
-  <script src="../script/app.js"></script>
-  <script src="../script/crew.js"></script>
+  <script src="script/app.js"></script>
 </body>
 </html>
