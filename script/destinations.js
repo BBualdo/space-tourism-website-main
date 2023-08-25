@@ -6,7 +6,7 @@ const distancePlaceholder = document.querySelector('.distance');
 const timePlaceholder = document.querySelector('.travel-time');
 // JSON destinations data 
 const getDestinationData = (index) => {
-  fetch('/data.json')
+  fetch('../script/data.json')
   .then((res) => res.json()
   .then((data) => {
     planetImagePlaceholder.innerHTML = `
